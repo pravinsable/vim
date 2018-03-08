@@ -54,7 +54,8 @@ highlight BookmarkLine ctermbg=194 ctermfg=NONE
 let g:bookmark_sign = '?'
 let g:bookmark_highlight_lines = 1
 
-
+execute "set <A-x>=\ex"
+noremap <A-x> <C-A>
 
 source $VIMRUNTIME/mswin.vim
 behave mswin
