@@ -60,6 +60,7 @@ nnoremap <silent> <F3> :redir @a<CR>:g//<CR>:redir END<CR>:new<CR>:put! a<CR>
 execute "set <A-x>=\ex"
 noremap <A-x> <C-A>
 nnoremap :: @:
+nnoremap Q <nop>
 
 
 source $VIMRUNTIME/mswin.vim
