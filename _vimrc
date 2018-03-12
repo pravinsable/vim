@@ -51,16 +51,29 @@ let MRU_Max_Entries = 1000
 
 highlight BookmarkSign ctermbg=NONE ctermfg=160
 highlight BookmarkLine ctermbg=194 ctermfg=NONE
-let g:bookmark_sign = '?'
+let g:bookmark_sign = '>>'
+let g:bookmark_annotation_sign = '##'
 let g:bookmark_highlight_lines = 1
+let g:bookmark_no_default_key_mappings = 1
+nmap <Leader>t <Plug>BookmarkToggle
+nmap <Leader>a <Plug>BookmarkAnnotate
+nmap <Leader>l <Plug>BookmarkShowAll
+nmap <Leader>j <Plug>BookmarkNext
+nmap <Leader>k <Plug>BookmarkPrev
+nmap <Leader>x <Plug>BookmarkClear
+nmap <Leader>d <Plug>BookmarkClear
+nmap <Leader>kk <Plug>BookmarkMoveUp
+nmap <Leader>jj <Plug>BookmarkMoveDown
+nmap <Leader>g <Plug>BookmarkMoveToLine
 
 
 nnoremap <silent> <F3> :redir @a<CR>:g//<CR>:redir END<CR>:new<CR>:put! a<CR>
 
 execute "set <A-x>=\ex"
 noremap <A-x> <C-A>
-nnoremap :: @:
-nnoremap Q <nop>
+nnoremap Q <C-q>
+nnoremap + :let @+=@"<CR>
+
 
 
 source $VIMRUNTIME/mswin.vim
