@@ -1,6 +1,7 @@
 "Personal Settings.
 "More to be added soon.
 execute pathogen#infect()
+helptags ~/vimfiles/bundle/matchit/doc
 filetype plugin indent on
 syntax on
 

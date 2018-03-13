@@ -24,3 +24,4 @@ git clone https://github.com/tpope/vim-abolish.git
 git clone https://github.com/tpope/vim-commentary.git
 git clone https://github.com/honza/vim-snippets.git
 git clone https://github.com/MattesGroeger/vim-bookmarks.git 
+git clone https://github.com/tmhedberg/matchit.git
