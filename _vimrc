@@ -57,14 +57,14 @@ let g:bookmark_annotation_sign = '##'
 let g:bookmark_highlight_lines = 1
 let g:bookmark_no_default_key_mappings = 1
 
-nmap <Leader>bt <Plug>BookmarkToggle
 nmap <Leader>bb <Plug>BookmarkToggle
 nmap <Leader>ba <Plug>BookmarkAnnotate
+nmap <Leader>bd <Plug>BookmarkClear
 nmap <Leader>bl <Plug>BookmarkShowAll
+nmap <Leader>bt <Plug>BookmarkToggle
 nmap <Leader>bj <Plug>BookmarkNext
 nmap <Leader>bk <Plug>BookmarkPrev
 nmap <Leader>bx <Plug>BookmarkClear
-nmap <Leader>bd <Plug>BookmarkClear
 nmap <Leader>kk <Plug>BookmarkMoveUp
 nmap <Leader>jj <Plug>BookmarkMoveDown
 nmap <Leader>bg <Plug>BookmarkMoveToLine
