@@ -41,6 +41,9 @@ nnoremap <C-@>  VG:norm@q<CR>
 vnoremap <C-@>  :norm@q<CR>
 nnoremap k gk
 nnoremap j gj
+nnoremap 0 g0
+nnoremap ^ g^
+nnoremap $ g$
 
 " NERDTree setting defaults to work around http://github.com/scrooloose/nerdtree/issues/489
 let g:NERDTreeDirArrows = 1
