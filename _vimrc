@@ -18,6 +18,7 @@ set hidden
 set incsearch
 set ignorecase
 set smartcase
+set hlsearch
 set showmatch
 set autoindent
 set ruler
@@ -79,6 +80,8 @@ execute "set <A-x>=\ex"
 noremap <A-x> <C-A>
 nnoremap Q <C-q>
 nnoremap + :let @+=@"<CR>
+" <Ctrl-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-l> :nohl<CR><C-l>
 
 
 
