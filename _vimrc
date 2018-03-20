@@ -79,7 +79,9 @@ nnoremap <silent> <F3> :redir @a<CR>:g//<CR>:redir END<CR>:new<CR>:put! a<CR>
 execute "set <A-x>=\ex"
 noremap <A-x> <C-A>
 nnoremap Q <C-q>
-nnoremap + :let @+=@"<CR>
+nnoremap <Space> :let @+=@"<CR>
+map - <Plug>(expand_region_shrink)
+
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
