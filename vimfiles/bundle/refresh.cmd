@@ -27,3 +27,4 @@ git clone https://github.com/MattesGroeger/vim-bookmarks.git
 git clone https://github.com/tmhedberg/matchit.git
 git clone https://github.com/vim-scripts/repeat-motion.git
 git clone https://github.com/landock/vim-expand-region.git
+REM git clone https://github.com/vim-scripts/YankRing.vim.git
