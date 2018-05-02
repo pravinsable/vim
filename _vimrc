@@ -5,6 +5,8 @@ helptags ~/vimfiles/bundle/matchit/doc
 filetype plugin indent on
 syntax on
 
+source $VIMRUNTIME/mswin.vim
+behave mswin
 
 "Set the status line options. Make it show more information.
 set laststatus=2
@@ -88,8 +90,9 @@ noremap <A-x> <C-A>
 nnoremap Q <C-q>
 nnoremap <Space> :let @+=@"<CR>
 
-
-
-source $VIMRUNTIME/mswin.vim
-behave mswin
+augroup myvimrc
+    autocmd!
+    autocmd QuickFixCmdPost [^l]* cwindow
+    autocmd QuickFixCmdPost l*    lwindow
+augroup END
 
