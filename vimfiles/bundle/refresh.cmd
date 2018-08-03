@@ -25,7 +25,6 @@ git clone https://github.com/tpope/vim-commentary.git
 git clone https://github.com/honza/vim-snippets.git
 git clone https://github.com/MattesGroeger/vim-bookmarks.git 
 git clone https://github.com/tmhedberg/matchit.git
-git clone https://github.com/vim-scripts/repeat-motion.git
 git clone https://github.com/landock/vim-expand-region.git
 git clone https://github.com/nelstrom/vim-visual-star-search.git
 REM git clone https://github.com/vim-scripts/YankRing.vim.git
