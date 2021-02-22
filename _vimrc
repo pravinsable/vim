@@ -1,16 +1,15 @@
 "Personal Settings.
 "More to be added soon.
+syntax on
 execute pathogen#infect()
 helptags ~/vimfiles/bundle/matchit/doc
 filetype plugin indent on
-syntax on
-
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
 "Set the status line options. Make it show more information.
 set laststatus=2
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\[POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
+"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\[POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 "Set Color Scheme and Font Options
 colorscheme kolor
 set guifont=Consolas:h12
@@ -84,7 +83,8 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 " set cc=10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200
 
 nnoremap <silent> <F3> :redir @a<CR>:g//<CR>:redir END<CR>:new<CR>:put! a<CR>
-
+"ALt+x to increase number
+"Ctrl+x to decrease number
 execute "set <A-x>=\ex"
 noremap <A-x> <C-A>
 nnoremap Q <C-q>
@@ -96,3 +96,6 @@ augroup myvimrc
     autocmd QuickFixCmdPost l*    lwindow
 augroup END
 
+gui
+"winpos 33 0
+"set lines=100
